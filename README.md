@@ -1,3 +1,35 @@
+# Kedium
+Cloning Medium 2.0 with next.js ([Sonny Sangha's youtube](https://youtu.be/I2dcpatq54o))
+
+## Create example
+```bash
+npx create-next-app --example with-tailwindcss sanity-yt-build
+```
+
+- install node packages
+  - tailwindcss
+  - sanity ([PAPAFAM boosted free plan](https://www.sanity.io/sonny))
+    ```
+    npm install -g @sanity/cli
+    ```
+    - Create project on sanity.io
+    ```
+    sanity init --coupon sonny2022   # thank you Sangha
+
+    ? Login type GitHub
+    ? Project name: Kedium
+    ? Use the default dataset configuration? Yes
+    ✔ Creating dataset
+    ? Project output path: D:\source\frontend\kedium
+    ? Select project template Blog (schema)
+    ```
+
+
+
+
+
+---
+
 # Next.js + Tailwind CSS Example
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
