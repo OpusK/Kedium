@@ -24,7 +24,10 @@ npx create-next-app --example with-tailwindcss sanity-yt-build
     ? Select project template Blog (schema)
     ```
 
-
+## Run example
+```bash
+npm run dev
+```
 
 
 
