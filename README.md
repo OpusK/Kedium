@@ -3,7 +3,7 @@ Cloning Medium 2.0 with next.js ([Sonny Sangha's youtube](https://youtu.be/I2dcp
 
 ## Create example
 ```bash
-npx create-next-app --example with-tailwindcss sanity-yt-build
+npx create-next-app --example with-tailwindcss medium_clone
 ```
 
 - install node packages
