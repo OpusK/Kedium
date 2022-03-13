@@ -5,30 +5,56 @@ Cloning Medium 2.0 with next.js ([Sonny Sangha's youtube](https://youtu.be/I2dcp
 ```bash
 npx create-next-app --example with-tailwindcss Kedium
 ```
-
 - install node packages
   - tailwindcss
-  - sanity ([PAPAFAM boosted free plan](https://www.sanity.io/sonny))
-    ```
-    npm install -g @sanity/cli
-    ```
-    - Create project on sanity.io
-    ```
-    sanity init --coupon sonny2022   # thank you Sangha
-
-    ? Login type GitHub
-    ? Project name: Kedium
-    ? Use the default dataset configuration? Yes
-    ✔ Creating dataset
-    ? Project output path: D:\source\frontend\Kedium\kedium
-    ? Select project template Blog (schema)
-    ```
 
 ## Run example
 ```bash
 npm run dev
 ```
 
+## Prepare for using sanity
+- install sanity ([PAPAFAM boosted free plan](https://www.sanity.io/sonny))
+  ```bash
+  npm install -g @sanity/cli
+  npm install next-sanity
+  ```
+- Create project on sanity.io
+```bash
+sanity init --coupon sonny2022   # thank you Sangha
+
+? Login type GitHub
+? Project name: Kedium
+? Use the default dataset configuration? Yes
+✔ Creating dataset
+? Project output path: D:\source\frontend\Kedium\kedium
+? Select project template Blog (schema)
+```
+- Create sanity.js file in root
+```
+touch sanity.js
+```
+- Run sanity studio locally
+```bash
+cd kedium  # sanity installed folder
+sanity start
+```
+- Enter localhost page & Login
+- Write Author & Post
+  - refer to `kedium/schemas/*` codes
+- Test query in Vision tab
+  - example query
+    ```
+    *[_type == "post"] {
+      _id,
+      title,
+      slug,
+      author -> {
+        name,
+        image
+      }
+    }
+    ```
 
 
 ---
