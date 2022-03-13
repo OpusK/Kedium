@@ -3,7 +3,7 @@ Cloning Medium 2.0 with next.js ([Sonny Sangha's youtube](https://youtu.be/I2dcp
 
 ## Create example
 ```bash
-npx create-next-app --example with-tailwindcss medium_clone
+npx create-next-app --example with-tailwindcss Kedium
 ```
 
 - install node packages
@@ -20,7 +20,7 @@ npx create-next-app --example with-tailwindcss medium_clone
     ? Project name: Kedium
     ? Use the default dataset configuration? Yes
     ✔ Creating dataset
-    ? Project output path: D:\source\frontend\kedium
+    ? Project output path: D:\source\frontend\Kedium\kedium
     ? Select project template Blog (schema)
     ```
 
