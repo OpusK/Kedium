@@ -18,6 +18,7 @@ npm run dev
   ```bash
   npm install -g @sanity/cli
   npm install next-sanity
+  npm install --save @sanity/image-url
   ```
 - Create project on sanity.io
 ```bash
