@@ -60,6 +60,13 @@ sanity start
     }
     ```
 
+## Deploy Sanity
+```
+sanity deploy
+
+? Studio hostname (<value>.sanity.studio): kedium
+```
+
 
 ---
 
