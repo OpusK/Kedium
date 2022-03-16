@@ -18,7 +18,7 @@ interface Props {
 }
 
 function Post({ post }: Props) {
-  const { submitted, setSubmitted } = useState(false);
+  const [ submitted, setSubmitted ] = useState(false);
   
   const { register, handleSubmit, formState: { errors } } = useForm<IFormInput>();
 
