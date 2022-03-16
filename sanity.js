@@ -5,9 +5,9 @@ export const config = {
   // Check sanity.json for configuration
   // https://www.sanity.io/docs/studio-environment-variables
   dataset: process.env.
-  NEXT_PUBLIC_SANITY_DATASET || "production",
+    NEXT_PUBLIC_SANITY_DATASET || "production",
   projectId: process.env.
-  NEXT_PUBLIC_SANITY_PROJECT_ID,
+    NEXT_PUBLIC_SANITY_PROJECT_ID,
   apiVersion: "2021-08-31",
   usdCdn: process.env.NODE_ENV === 'production',
 };

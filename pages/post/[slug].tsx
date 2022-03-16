@@ -18,8 +18,8 @@ interface Props {
 }
 
 function Post({ post }: Props) {
-  const [ submitted, setSubmitted ] = useState(false);
-  
+  const [submitted, setSubmitted] = useState(false);
+
   const { register, handleSubmit, formState: { errors } } = useForm<IFormInput>();
 
   const onSubmit: SubmitHandler<IFormInput> = (data) => {
@@ -27,24 +27,24 @@ function Post({ post }: Props) {
       method: 'POST',
       body: JSON.stringify(data),
     })
-    .then(() => {
-      console.log(data);
-      setSubmitted(true);
-    })
-    .catch((err) => {
-      console.log(err);
-      setSubmitted(false);
-    });
+      .then(() => {
+        console.log(data);
+        setSubmitted(true);
+      })
+      .catch((err) => {
+        console.log(err);
+        setSubmitted(false);
+      });
   };
 
   return (
     <main>
       <Header />
 
-      <img 
+      <img
         className="w-full h-40 object-cover"
         src={urlFor(post.mainImage).url()!}
-        alt="" 
+        alt=""
       />
 
       <article className="max-w-3xl mx-auto p-5">
@@ -57,7 +57,7 @@ function Post({ post }: Props) {
           <img
             className="h-10 w-10 rouded-full"
             src={urlFor(post.author.image).url()!}
-            alt="" 
+            alt=""
           />
           <p className="font-extralight text-sm">
             Blog post by <span className="text-green-600">{post.author.name}</span> -
@@ -86,7 +86,7 @@ function Post({ post }: Props) {
 
       <hr className="max-w-lg my-5 mx-auto border border-yellow-500" />
 
-      { submitted? (
+      {submitted ? (
         <div className="flex flex-col px-10 py-10 my-10 bg-yellow-500 text-white max-w-2xl mx-auto">
           <h3 className="text-3xl font-bold">Thank you for submitting your comment!</h3>
           <p>Once it has been approved, it will appear below!</p>
@@ -130,7 +130,7 @@ function Post({ post }: Props) {
               placeholder="John Appleaseed"
               rows={8}
             />
-          </label>                        
+          </label>
 
           {/* errors will return when field validation fails */}
           <div className="flex flex-col p-5">
@@ -153,7 +153,7 @@ function Post({ post }: Props) {
       {/* Comments */}
       <div className="flex flex-col p-10 my-10 max-w-2xl mx-auto shadow-yellow-500 shadow space-y-2">
         <h3 className="text-4xl">Comments</h3>
-        <hr className="pb-2"/>
+        <hr className="pb-2" />
         {post.comments.map((comment) => (
           <div key={comment._id}>
             <p>
