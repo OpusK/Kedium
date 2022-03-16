@@ -13,7 +13,7 @@ const Home: NextPage<Props> = ({ posts }) => {
   return (
     <div className="max-w-7xl mx-auto">
       <Head>
-        <title>Create Next App</title>
+        <title>Kedium</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
