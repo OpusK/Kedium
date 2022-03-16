@@ -8,6 +8,7 @@ npx create-next-app --example with-tailwindcss Kedium
 - install node packages
   - tailwindcss
   - [react-portable-text](https://www.npmjs.com/package/react-portable-text)
+  - [react-hook-form](https://react-hook-form.com/get-started)
 
 ## Run example
 ```bash
