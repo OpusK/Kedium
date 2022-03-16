@@ -31,7 +31,7 @@ sanity init --coupon sonny2022   # thank you Sangha
 ? Project name: Kedium
 ? Use the default dataset configuration? Yes
 ✔ Creating dataset
-? Project output path: D:\source\frontend\Kedium\kedium
+? Project output path: D:\source\frontend\Kedium\sanity
 ? Select project template Blog (schema)
 ```
 - Create sanity.js file in root
